@@ -56,8 +56,8 @@ session = httpx.Client(
 )
 
 session.cookies.update({ 
-    "XSRF-TOKEN": "eyJpdiI6IlRqYklDcWpqNWx4VGZBeC9yNy80ZXc9PSIsInZhbHVlIjoiWE5jbEpKUzZWNkhFT3o5RnZ4OFJVT1o0M1I5UHg0a2FReEE1d3AwT1ZaL2RCQzEyZWpoR3JQZ0JiRldCMmh5TWV4NXFBTVFQcnhYbllpQmN2WUxTR3dkTnZiSWsxdzJnVmg0U1hFOUVDVmUvVDJaRG8vamo2YWd2VVMremhsOXUiLCJtYWMiOiIxYzk4NzQxODExNWUxYzE5YTBiOGJiNDFmYzk4NWY2YmE0MDk0OTc3NDhkNTU3NDIzNzk4MjFjZmUwYjhhZmY3IiwidGFnIjoiIn0%3D",
-    "ivas_sms_session": "eyJpdiI6ImNoaHlVS0U2WU5pa05pMk42ODhJdXc9PSIsInZhbHVlIjoiUklRdHF5ODFpNDMxYzg0TmxBYzUyNitVL3VQSUVDem9OY0loTnVjT1JmbWpySjNXVW5PbHo2UTlWOXo2bHVEN0VobHp6eUlMK2hwOTBxVFd3M2JRT2ZoQUVoQTh0enhlUmI0cVFrWks0TXNLUUZzb3o1eS8xQWZPWUFnUWZDc2YiLCJtYWMiOiJlNjUwMzU1M2FhMDVjY2Y0ODJmMjMxZDdlNDgzNGVhMTgzYWVmNWU5ZWM2NDkwM2ExZWY5N2NiYmMyZWVhMzlkIiwidGFnIjoiIn0%3D" # GANTI COOKIE XSRF/IVASMS_SESION TOKEN LU
+    "XSRF-TOKEN": "eyJpdiI6IlVKdnF4eTZjK1EwZVVBRGZ1UHpjWEE9PSIsInZhbHVlIjoicFhyaWk0Q05rMnFQUHljRmNVM1haZlRFTzAvcFBqcDB4ekFhdXVvYWdhaUdWN0pMOTluL2NRTjJqNmlEbVBWVUNGRGdaNDBON2E3cDlMRFR2cEdZbnhyN1BPVGROKzVXRHc0eEFLUjZCSnVsSkhqRGRlRHoxc0JwRk1pT1RJVCsiLCJtYWMiOiIyZWI3MTNlODQ5NTBiMDEzYWU2N2E2NzI2ODY4MjQwOTUyYWY3MzkzMDBjYmUxZDkyZTMwNzE0OWRmNjg5ZTIxIiwidGFnIjoiIn0%3D",
+    "ivas_sms_session": "eyJpdiI6IkhzRWR1UEJoaXZrai8zNEg5S1hhVFE9PSIsInZhbHVlIjoiRVFyTURaM0NNWFJLMjA0aGoxOE9yemhyaEFuelo5MFhiNmFCbktCQSs0SjZsNUFPL3hLZjlvVHIxUlZ5cnVReGloK3ljM0RPWTFjMmRvdm45ck1LalJtaDBtUmhwV0hrc05DSmYxN0RBUkdXMEU1WDIvZjNCbEhsSFF4bzRlbkwiLCJtYWMiOiJjOGQ4MjE5MDQyMWNmMGYyZGU5ZGMyZDliNzdjNjc2NTU1ZWMyOTYwNWVkMmQ0NGVjYTNmZmU5M2I3NmNlM2U0IiwidGFnIjoiIn0%3D" # GANTI COOKIE XSRF/IVASMS_SESION TOKEN LU
 })
 
 sent_cache = set()
@@ -377,13 +377,13 @@ def run_bot():
 
                         print("[Otp Terkirim]", otp, "ke", num)
 
-            time.sleep(0)
+            time.sleep(3)
 
         except Exception as e:
 
             print("[ERROR]", e)
 
-            time.sleep(0)
+            time.sleep(3)
 
 # ================= START =================
 
